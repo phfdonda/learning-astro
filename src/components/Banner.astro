@@ -1,0 +1,24 @@
+---
+import Image from "./Image.astro";
+
+const { src, alt, title, subtitle } = Astro.props;
+---
+
+<section>
+  <picture>
+    <Image src={src} alt={alt} title={title} subtitle={subtitle} />
+  </picture>
+</section>
+
+<style>
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80svh;
+    width: 100%;
+  }
+  picture {
+    display: flex;
+  }
+</style>

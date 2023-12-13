@@ -1,10 +1,16 @@
 ---
-import Layout from "../layouts/Layout.astro"
-import Navbar from "../components/Navbar.astro"
+import Layout from "../layouts/Layout.astro";
+
+import Banner from "../components/Banner.astro";
+import Navbar from "../components/Navbar.astro";
 ---
 
 <Layout title="Home">
-  <Navbar title="Home" />
-  <p>This is a test page</p>
-  <a href="/about/">About</a>
+  <Navbar title="Ótica da Praça" />
+  <Banner
+    src="./public/images/casal-otica-da-praca.jpg"
+    alt="Casal de meia idade usando óculos"
+    title="Quer comprar óculos novos, ou consertar seus antigos?"
+    subtitle="Na Ótica da Praça, você encontra os melhores óculos para você e sua família."
+  />
 </Layout>

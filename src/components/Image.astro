@@ -2,16 +2,20 @@
 const { src, alt, width, height } = Astro.props;
 ---
 
-<div>
+<picture>
   <img src={src} alt={alt} />
-</div>
+</picture>
 
 <style define:vars={{ width, height }}>
   img {
-    display: block;
     width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    max-inline-size: 100%;
+    block-size: auto;
   }
-  div {
+
+  picture {
     width: var(--width);
     height: var(--height);
   }
