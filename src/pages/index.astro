@@ -1,8 +1,10 @@
 ---
-import Layout from '../layouts/Layout.astro'
+import Layout from "../layouts/Layout.astro"
+import Navbar from "../components/Navbar.astro"
 ---
+
 <Layout title="Home">
-	<h1>Astro</h1>
-	<p>This is a test page</p>
-	<a href="/about/">About</a>
+  <Navbar title="Home" />
+  <p>This is a test page</p>
+  <a href="/about/">About</a>
 </Layout>

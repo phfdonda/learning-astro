@@ -1,0 +1,29 @@
+---
+import Image from "../components/Image.astro";
+
+const { title } = Astro.props;
+---
+
+<nav>
+  <Image
+    src="/public/images/logo-otica.png"
+    alt="Logo Otica"
+    width="20%"
+    height="auto"
+  />
+  <h1>{title}</h1>
+</nav>
+
+<style>
+  nav {
+    background: white;
+    color: black;
+    padding: 1rem;
+    width: 100vw;
+    height: 15svh;
+  }
+
+  h1 {
+    margin: 0;
+  }
+</style>

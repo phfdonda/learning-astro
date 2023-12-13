@@ -1,0 +1,18 @@
+---
+const { src, alt, width, height } = Astro.props;
+---
+
+<div>
+  <img src={src} alt={alt} />
+</div>
+
+<style define:vars={{ width, height }}>
+  img {
+    display: block;
+    width: 100%;
+  }
+  div {
+    width: var(--width);
+    height: var(--height);
+  }
+</style>

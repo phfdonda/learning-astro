@@ -1,0 +1,7 @@
+{
+  "workbench.settings.editor": "json",
+  "prettier.documentSelectors": ["**/*.astro"],
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  }
+}
